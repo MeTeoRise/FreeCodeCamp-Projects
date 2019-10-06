@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Technical Documentation</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<nav id="navbar">
+  <header>Electric Generator Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Terminology">Terminology</a></li>
+    <li>
+      <a class="nav-link" href="#History"
+        >History</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Specialized_types_of_generator">Specialized types of generator</a>
+    </li>
+    <li><a class="nav-link" href="#Common_use_cases">Common use cases</a></li>
+    <li><a class="nav-link" href="#Equivalent_circuit">Equivalent circuit</a></li>
+    <li>
+      <a class="nav-link" href="#See_also">See also</a>
+    </li>
+    <li><a class="nav-link" href="#References">References</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Terminology">
+    <header>Terminology</header>
+    <article>
+      <p>
+        Electromagnetic generators fall into one of two broad categories, dynamos and alternators.
+      </p>
+      <ul>
+        <li>
+          Dynamos generate pulsing direct current through the use of a commutator.
+        </li>
+        <li>
+          Alternators generate alternating current.
+        </li>
+      </ul>
+      <p>
+        Mechanically a generator consists of a rotating part and a stationary part:
+
+Rotor
+The rotating part of an electrical machine.
+Stator
+The stationary part of an electrical machine, which surrounds the rotor.
+One of these parts generates a magnetic field, the other has a wire winding in which the changing field induces an electric current:
+
+Field winding or field (permanent) magnets
+The magnetic field producing component of an electrical machine. The magnetic field of the dynamo or alternator can be provided by either wire windings called field coils or permanent magnets. Electrically-excited generators include an excitation system to produce the field flux. A generator using permanent magnets (PMs) is sometimes called a magneto, or permanent magnet synchronous generators (PMSMs).
+Armature
+The power-producing component of an electrical machine. In a generator, alternator, or dynamo, the armature windings generate the electric current, which provides power to an external circuit. The armature can be on either the rotor or the stator, depending on the design, with the field coil or magnet on the other part.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="History">
+    <header>History</header>
+    <article>
+      <p>Before the connection between magnetism and electricity was discovered, electrostatic generators were invented. They operated on electrostatic principles, by using moving electrically charged belts, plates, and disks that carried charge to a high potential electrode. The charge was generated using either of two mechanisms: electrostatic induction or the triboelectric effect. Such generators generated very high voltage and low current. Because of their inefficiency and the difficulty of insulating machines that produced very high voltages, electrostatic generators had low power ratings, and were never used for generation of commercially significant quantities of electric power. Their only practical applications were to power early X-ray tubes, and later in some atomic particle accelerators.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Specialized_types_of_generator">
+    <header>Specialized types of generator</header>
+    <article>
+      <h4>Direct current (DC)</h4>
+      <p>
+        An important class of direct-current generators are the dynamos - these are electrical machines with commutators to produce (DC) direct current, and are self excited - their field electromagnets are powered by the machine's own output. Other types of DC generator use a separate source of direct current to energize their field magnets.
+      </p>
+
+      <h4>Alternating current (AC)</h4>
+      <p>
+        Induction AC motors may be used as generators, turning mechanical energy into electric current. Induction generators operate by mechanically turning their rotor faster than the synchronous speed, giving negative slip. A regular AC asynchronous motor usually can be used as a generator, without any internal modifications. Induction generators are useful in applications such as minihydro power plants, wind turbines, or in reducing high-pressure gas streams to lower pressure, because they can recover energy with relatively simple controls. They do not require an exciter circuit because the rotating magnetic field is provided by induction from the stator circuit. They also do not require speed governor equipment as they inherently operate at the connected grid frequency.
+
+To operate, an induction generator must be excited with a leading voltage; this is usually done by connection to an electrical grid, or sometimes they are self-excited by using phase correcting capacitors.
+      </p>
+      <p>
+        In the simplest form of linear electric generator, a sliding magnet moves back and forth through a solenoid - a spool of copper wire. An alternating current is induced in the loops of wire by Faraday's law of induction each time the magnet slides through. This type of generator is used in the Faraday flashlight. Larger linear electricity generators are used in wave power schemes.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Common_use_cases">
+    <header>Common use cases</header>
+    <article>
+      <h4>Power station</h4>
+      <p>A power station, also referred to as a power plant or powerhouse and sometimes generating station or generating plant, is an industrial facility for the generation of electric power. Most power stations contain one or more generators, a rotating machine that converts mechanical power into three-phase electric power. The relative motion between a magnetic field and a conductor creates an electrical current. The energy source harnessed to turn the generator varies widely. Most power stations in the world burn fossil fuels such as coal, oil, and natural gas to generate electricity. Cleaner sources include nuclear power, and an increasing use of renewables such as solar, wind, wave and hydroelectric.</p>
+
+      <h4>Vehicular generators</h4>
+      <p>Motor vehicles require electrical energy to power their instrumentation, keep the engine itself operating, and recharge their batteries. Until about the 1960s motor vehicles tended to use DC generators with electromechanical regulators. Following the historical trend above and for many of the same reasons, these have now been replaced by alternators with built-in rectifier circuits.</p>
+      <h4>Genset</h4>
+      <p>An engine-generator is the combination of an electrical generator and an engine (prime mover) mounted together to form a single piece of self-contained equipment. The engines used are usually piston engines, but gas turbines can also be used. And there are even hybrid diesel-gas units, called dual-fuel units. Many different versions of engine-generators are available - ranging from very small portable petrol powered sets to large turbine installations. The primary advantage of engine-generators is the ability to independently supply electricity, allowing the units to serve as backup power solutions.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Equivalent_circuit">
+    <header>Equivalent circuit</header>
+    <p>
+      An equivalent circuit of a generator and load is shown in the adjacent diagram. The generator is represented by an abstract generator consisting of an ideal voltage source and an internal resistance. The generator's Vg and Rg parameters can be determined by measuring the winding resistance (corrected to operating temperature), and measuring the open-circuit and loaded voltage for a defined current load.
+
+  This is the simplest model of a generator, further elements may need to be added for an accurate representation. In particular, inductance can be added to allow for the machine's windings and magnetic leakage flux,[23] but a full representation can become much more complex than this.[24]
+    </p>
+  </section>
+  <section class="main-section" id="See_also">
+    <header>See also</header>
+    <article>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Electricity_generation">Electricity generation</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Engine-generator">Engine-generator</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Diesel_generator">Diesel generator</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction">Faraday's law of induction</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Electric_motor">Electric motor</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Thermogenerator">Thermogenerator</a></li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="References">
+    <header>References</header>
+    <article>
+      <p>
+				<a href="https://en.wikipedia.org/wiki/Electric_generator">Wikipedia</a>
+			</p>
+    </article>
+  </section>
+</main>
+</html>
